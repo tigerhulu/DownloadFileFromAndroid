@@ -19,6 +19,12 @@
 		93A7119819161E620074FEE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A7118019161E620074FEE6 /* UIKit.framework */; };
 		93A711A019161E620074FEE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93A7119E19161E620074FEE6 /* InfoPlist.strings */; };
 		93A711A219161E620074FEE6 /* DowloadFileFromAndroidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A711A119161E620074FEE6 /* DowloadFileFromAndroidTests.m */; };
+		93A711B119161FBA0074FEE6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A711AF19161FBA0074FEE6 /* MainViewController.m */; };
+		93A711B219161FBA0074FEE6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A711B019161FBA0074FEE6 /* MainViewController.xib */; };
+		93A711B5191622670074FEE6 /* PostToSever.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A711B4191622670074FEE6 /* PostToSever.m */; };
+		93A711BC191622E50074FEE6 /* DemoSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A711B8191622E50074FEE6 /* DemoSong.m */; };
+		93D6474D191771CD00F387B8 /* DemoSongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6474B191771CD00F387B8 /* DemoSongTableViewCell.m */; };
+		93D6474E191771CD00F387B8 /* DemoSongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D6474C191771CD00F387B8 /* DemoSongTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,17 @@
 		93A7119D19161E620074FEE6 /* DowloadFileFromAndroidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DowloadFileFromAndroidTests-Info.plist"; sourceTree = "<group>"; };
 		93A7119F19161E620074FEE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93A711A119161E620074FEE6 /* DowloadFileFromAndroidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowloadFileFromAndroidTests.m; sourceTree = "<group>"; };
+		93A711AE19161FBA0074FEE6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		93A711AF19161FBA0074FEE6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		93A711B019161FBA0074FEE6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		93A711B3191622670074FEE6 /* PostToSever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToSever.h; sourceTree = "<group>"; };
+		93A711B4191622670074FEE6 /* PostToSever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToSever.m; sourceTree = "<group>"; };
+		93A711B6191622E50074FEE6 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		93A711B7191622E50074FEE6 /* DemoSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSong.h; sourceTree = "<group>"; };
+		93A711B8191622E50074FEE6 /* DemoSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSong.m; sourceTree = "<group>"; };
+		93D6474A191771CD00F387B8 /* DemoSongTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSongTableViewCell.h; sourceTree = "<group>"; };
+		93D6474B191771CD00F387B8 /* DemoSongTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSongTableViewCell.m; sourceTree = "<group>"; };
+		93D6474C191771CD00F387B8 /* DemoSongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoSongTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +124,17 @@
 		93A7118219161E620074FEE6 /* DowloadFileFromAndroid */ = {
 			isa = PBXGroup;
 			children = (
+				93A711B6191622E50074FEE6 /* Common.h */,
+				93A711AE19161FBA0074FEE6 /* MainViewController.h */,
+				93A711AF19161FBA0074FEE6 /* MainViewController.m */,
+				93A711B019161FBA0074FEE6 /* MainViewController.xib */,
+				93A711B3191622670074FEE6 /* PostToSever.h */,
+				93A711B4191622670074FEE6 /* PostToSever.m */,
+				93A711B7191622E50074FEE6 /* DemoSong.h */,
+				93A711B8191622E50074FEE6 /* DemoSong.m */,
+				93D6474A191771CD00F387B8 /* DemoSongTableViewCell.h */,
+				93D6474B191771CD00F387B8 /* DemoSongTableViewCell.m */,
+				93D6474C191771CD00F387B8 /* DemoSongTableViewCell.xib */,
 				93A7118B19161E620074FEE6 /* AppDelegate.h */,
 				93A7118C19161E620074FEE6 /* AppDelegate.m */,
 				93A7118E19161E620074FEE6 /* Images.xcassets */,
@@ -220,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A7118719161E620074FEE6 /* InfoPlist.strings in Resources */,
+				93A711B219161FBA0074FEE6 /* MainViewController.xib in Resources */,
+				93D6474E191771CD00F387B8 /* DemoSongTableViewCell.xib in Resources */,
 				93A7118F19161E620074FEE6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A7118D19161E620074FEE6 /* AppDelegate.m in Sources */,
+				93A711BC191622E50074FEE6 /* DemoSong.m in Sources */,
+				93A711B119161FBA0074FEE6 /* MainViewController.m in Sources */,
+				93A711B5191622670074FEE6 /* PostToSever.m in Sources */,
+				93D6474D191771CD00F387B8 /* DemoSongTableViewCell.m in Sources */,
 				93A7118919161E620074FEE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +323,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -328,7 +362,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -439,6 +473,7 @@
 				93A711A719161E620074FEE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93A711A819161E620074FEE6 /* Build configuration list for PBXNativeTarget "DowloadFileFromAndroidTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +482,7 @@
 				93A711AA19161E620074FEE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

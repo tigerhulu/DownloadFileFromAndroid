@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoSongTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SharedTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoSongTableViewCell" rowHeight="71" id="HpJ-he-AsO" customClass="DemoSongTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="50" tableViewCell="HpJ-he-AsO" id="YaT-Na-NGI">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GG3-S3-Yfp">
+                        <rect key="frame" x="4" y="61" width="301" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </progressView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEV-RY-CWp">
+                        <rect key="frame" x="14" y="37" width="81" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-EQ-CM3">
+                        <rect key="frame" x="14" y="4" width="268" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vB-QU-uKL">
+                        <rect key="frame" x="132" y="34" width="88" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ib_pvDownload" destination="GG3-S3-Yfp" id="Icp-gz-4CH"/>
+                <outlet property="ib_tfArtist" destination="aEV-RY-CWp" id="IpH-5g-hNX"/>
+                <outlet property="ib_tfSize" destination="2vB-QU-uKL" id="lF2-RY-0Mg"/>
+                <outlet property="ib_tfTitle" destination="hPj-EQ-CM3" id="bAI-3Z-G0z"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

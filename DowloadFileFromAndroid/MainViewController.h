@@ -35,5 +35,4 @@
 -(IBAction)GoBack:(id)sender;
 -(void)UpdateProgressbar:(NSNotification*)aNotification;
 
-@property(assign, readwrite)AppDelegate     *m_pcAppDelegate;
 @end

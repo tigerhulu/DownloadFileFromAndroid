@@ -74,6 +74,10 @@ enum _conn_server_msg_type
 	MSG_DISCONNECT          = 4,
 };
 
+//typedef NS_ENUM(NSInteger, <#_name#>) <#new#>;
+
+//typedef NS_OPTIONS(<#_type#>, <#_name#>) <#new#>;
+
 typedef struct _song_attribute_
 {
 	char pszID        [LEN_SONG_ID];

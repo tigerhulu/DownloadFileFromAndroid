@@ -11,13 +11,11 @@
 
 @class DemoSongTableViewCell;
 
-@interface MainViewController ()
-
+@interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
+#pragma mark - Private property declaration
 @end
 
 @implementation MainViewController
-
-@synthesize m_pcAppDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +29,6 @@
         m_pmaDownloadedSong   = [[NSMutableArray alloc] initWithCapacity:200];
         m_pmaSharedSong       = [[NSMutableArray alloc] initWithCapacity:200];
         [self initObservers];
-        
     }
     return self;
 }
@@ -101,6 +98,7 @@
 {
     RET_VAL retVal = RET_OK;
     retVal = [m_pcPostToServer SetIpAndPort];
+    
     if(!retVal)
     {
         retVal = [m_pcPostToServer SendMsgToServer:MSG_WHOAMI :nil];
@@ -112,6 +110,24 @@
     
     if(!retVal)
     {
+        UITableViewController *sharedController = [UITableViewController new];
+        sharedController.tableView.dataSource = self;
+        sharedController.tableView.delegate = self;
+        
+        UITableViewController *downloadController = [UITableViewController new];
+        downloadController.tableView.dataSource = self;
+        downloadController.tableView.delegate = self;
+        
+        UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:sharedController];
+        UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:downloadController];
+        
+        ib_tbcMainView.viewControllers = @[nav1, nav2];
+        
+        [sharedController release];
+        [downloadController release];
+        [nav1 release];
+        [nav2 release];
+        
         [self presentViewController:ib_tbcMainView animated:NO completion:nil];
         [ib_btDisConnect setHidden:NO];
         [ib_btConnect    setHidden:YES];
@@ -139,6 +155,9 @@
     DemoSong *pcSelectSong = [[DemoSong alloc] initByCopy:[m_pmaSharedSong objectAtIndex:[ib_tvShared indexPathForRowAtPoint:[sender frame].origin].row]];
     
     [NSThread detachNewThreadSelector:@selector(DownloadingProc:) toTarget:self withObject:pcSelectSong];
+    
+    // GCD grand centeral dispatch
+    // NSOperationQueue
 }
 
 -(IBAction)GoBack:(id)sender

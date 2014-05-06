@@ -15,10 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    MainViewController *viewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
+    self.window.rootViewController = viewController;
     //self.window.backgroundColor = [UIColor whiteColor];
-    self.viewController.m_pcAppDelegate = self;
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -49,6 +48,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)dealloc {
+    [_window release];
+    
+    [super dealloc];
 }
 
 @end
